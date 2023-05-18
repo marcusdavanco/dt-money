@@ -6,14 +6,6 @@ import { TransactionsContext } from "../../contexts/TransactionsContext"
 import { useContext } from "react"
 import { priceFormatter, dateFormatter } from "../../utils/formatter"
 
-interface Transaction {
-	id: number;
-	description: string;
-	type: 'income' | 'outcome';
-	price: string;
-	createdAt: string;
-}
-
 export function Transactions() {
 	const { transactions } = useContext(TransactionsContext)
 
